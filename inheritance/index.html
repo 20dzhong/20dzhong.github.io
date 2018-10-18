@@ -559,8 +559,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../javaHashmap/" title="Hashmaps" class="md-nav__link">
-      Hashmaps
+    <a href="../javaHashing/" title="Hashing" class="md-nav__link">
+      Hashing
     </a>
   </li>
 
@@ -751,8 +751,8 @@ features from another class.</p>
 35
 36
 37
-38</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// animal is the superclass of frog</span>
-    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">animal</span> <span class="o">{</span>
+38</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// Animal is the superclass of Frog</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
         <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
         <span class="n">String</span> <span class="n">food</span><span class="o">;</span>
         <span class="kd">private</span> <span class="kt">int</span> <span class="n">lifespan</span><span class="o">;</span>
@@ -762,26 +762,26 @@ features from another class.</p>
                     <span class="s">&quot; and eats &quot;</span> <span class="o">+</span> <span class="n">food</span> <span class="o">+</span> <span class="s">&quot; as its primary food source. &quot;</span><span class="o">);</span>
     <span class="o">}</span>
 
-    <span class="c1">// class frog is a subclass of animal</span>
-    <span class="kd">class</span> <span class="nc">frog</span> <span class="kd">extends</span> <span class="n">animal</span> <span class="o">{</span>
+    <span class="c1">// class Frog is a subclass of Animal</span>
+    <span class="kd">class</span> <span class="nc">Frog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span>
         <span class="n">String</span> <span class="n">color</span><span class="o">;</span>
-        <span class="kt">boolean</span> <span class="n">isPoisonous</span><span class="o">;</span>
+        <span class="kt">boolean</span> <span class="n">poisonous</span><span class="o">;</span>
 
-        <span class="kt">void</span> <span class="nf">isdangerous</span><span class="o">()</span> <span class="o">{</span>
-            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;frog is poisonous: &quot;</span> <span class="o">+</span> <span class="n">isPoisonous</span><span class="o">);</span>
+        <span class="kt">void</span> <span class="nf">isDangerous</span><span class="o">()</span> <span class="o">{</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Frog is poisonous: &quot;</span> <span class="o">+</span> <span class="n">poisonous</span><span class="o">);</span>
         <span class="o">}</span>
     <span class="o">}</span>
 
     <span class="kd">class</span> <span class="nc">test</span><span class="o">{</span>
         <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
-            <span class="n">frog</span> <span class="n">dartFrog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">frog</span><span class="o">();</span>
+            <span class="n">Frog</span> <span class="n">dartFrog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Frog</span><span class="o">();</span>
 
             <span class="c1">// object dartFrog has access to variables and functions within dangerous</span>
-            <span class="n">dartFrog</span><span class="o">.</span><span class="na">isPoisonous</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+            <span class="n">dartFrog</span><span class="o">.</span><span class="na">poisonous</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
             <span class="n">dartFrog</span><span class="o">.</span><span class="na">color</span> <span class="o">=</span> <span class="s">&quot;red&quot;</span><span class="o">;</span>
-            <span class="n">dartFrog</span><span class="o">.</span><span class="na">isdangerous</span><span class="o">();</span>
+            <span class="n">dartFrog</span><span class="o">.</span><span class="na">isDangerous</span><span class="o">();</span>
 
-            <span class="c1">// object dartFrog also has access to variables and functions in animal</span>
+            <span class="c1">// object dartFrog also has access to variables and functions in Animal</span>
             <span class="n">dartFrog</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="s">&quot;okopipi&quot;</span><span class="o">;</span>
             <span class="n">dartFrog</span><span class="o">.</span><span class="na">food</span> <span class="o">=</span> <span class="s">&quot;ants&quot;</span><span class="o">;</span>
 
@@ -793,13 +793,13 @@ features from another class.</p>
 </td></tr></table>
 
 </div>
-<p>In the above example, class <em>dartFrog</em> is a subclass of <em>animal</em>, and have all the features of an animal except for those
+<p>In the above example, class <em>dartFrog</em> is a subclass of <em>Animal</em>, and have all the features of an Animal except for those
 that were declared <strong>private</strong></p>
 <ul>
-<li>class <em>animal</em> has variables <code class="codehilite">name</code> and <code class="codehilite">food</code> and function <code class="codehilite">printInfo</code>, that means all classes that inherit from <em>animals</em>
+<li>class <em>Animal</em> has variables <code class="codehilite">name</code> and <code class="codehilite">food</code> and function <code class="codehilite">printInfo</code>, that means all classes that inherit from <em>Animals</em>
 will have access <code class="codehilite">name</code>, <code class="codehilite">food</code>, and <code class="codehilite">printInfo</code></li>
 </ul>
-<p>However, class <em>animal</em> does not have access to any features within <em>dartFrog</em></p>
+<p>However, class <em>Animal</em> does not have access to any features within <em>dartFrog</em></p>
 <p>Private variables and functions cannot be access from anywhere outside of its class, however, a controlled way of accessing
 private members is to use an accessor method. </p>
 <div class="admonition note">
@@ -824,13 +824,13 @@ private members is to use an accessor method. </p>
 18
 19
 20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// animal class</span>
-    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">animal</span> <span class="o">{</span>
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// Animal class</span>
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animal</span> <span class="o">{</span>
         <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
         <span class="n">String</span> <span class="n">food</span><span class="o">;</span>
         <span class="kd">private</span> <span class="kt">int</span> <span class="n">lifespan</span> <span class="o">=</span> <span class="mi">15</span><span class="o">;</span>
 
-        <span class="c1">// setLifespan is within the class animal so it&#39;s able to access lifespan</span>
+        <span class="c1">// setLifespan is within the class Animal so it&#39;s able to access lifespan</span>
         <span class="kt">void</span> <span class="nf">setLifespan</span><span class="o">(</span><span class="kt">int</span> <span class="n">time</span><span class="o">)</span> <span class="o">{</span>
              <span class="n">lifespan</span> <span class="o">=</span> <span class="n">time</span><span class="o">;</span>
         <span class="o">}</span>
@@ -838,7 +838,7 @@ private members is to use an accessor method. </p>
 
     <span class="kd">class</span> <span class="nc">test</span><span class="o">{</span>
         <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
-            <span class="n">animal</span> <span class="n">cheetah</span> <span class="o">=</span> <span class="k">new</span> <span class="n">animal</span><span class="o">();</span>
+            <span class="n">Animal</span> <span class="n">cheetah</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="o">();</span>
 
             <span class="c1">// and now, this line of code will work!</span>
             <span class="c1">// the function setLifespan() will be able to access the variable lifespan</span>
@@ -881,13 +881,13 @@ private members is to use an accessor method. </p>
 25
 26
 27
-28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// superclass shapes</span>
-    <span class="kd">class</span> <span class="nc">shapes</span> <span class="o">{</span>
+28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// superclass Shapes</span>
+    <span class="kd">class</span> <span class="nc">Shapes</span> <span class="o">{</span>
         <span class="kd">private</span> <span class="kt">double</span> <span class="n">width</span><span class="o">;</span>
         <span class="kd">private</span> <span class="kt">double</span> <span class="n">height</span><span class="o">;</span>
 
-        <span class="c1">// Parameterized constructor for shapes</span>
-        <span class="n">shapes</span><span class="o">(</span><span class="kt">double</span> <span class="n">w</span><span class="o">,</span> <span class="kt">double</span> <span class="n">h</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Parameterized constructor for Shapes</span>
+        <span class="n">Shapes</span><span class="o">(</span><span class="kt">double</span> <span class="n">w</span><span class="o">,</span> <span class="kt">double</span> <span class="n">h</span><span class="o">)</span> <span class="o">{</span>
             <span class="n">width</span> <span class="o">=</span> <span class="n">w</span><span class="o">;</span>
             <span class="n">height</span> <span class="o">=</span> <span class="n">h</span><span class="o">;</span>
         <span class="o">}</span>
@@ -897,13 +897,13 @@ private members is to use an accessor method. </p>
         <span class="kt">double</span> <span class="nf">getHeight</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">height</span><span class="o">;</span> <span class="o">}</span>
     <span class="o">}</span>
 
-    <span class="c1">// subclass triangle inherits from shapes</span>
-    <span class="kd">class</span> <span class="nc">Triangle</span> <span class="kd">extends</span> <span class="n">shapes</span> <span class="o">{</span>
+    <span class="c1">// subclass triangle inherits from Shapes</span>
+    <span class="kd">class</span> <span class="nc">Triangle</span> <span class="kd">extends</span> <span class="n">Shapes</span> <span class="o">{</span>
         <span class="kd">private</span> <span class="n">String</span> <span class="n">style</span><span class="o">;</span>
 
         <span class="c1">// constructor for Triangle</span>
         <span class="n">Triangle</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">,</span> <span class="kt">double</span> <span class="n">w</span><span class="o">,</span> <span class="kt">double</span> <span class="n">h</span><span class="o">){</span>
-            <span class="kd">super</span><span class="o">(</span><span class="n">w</span><span class="o">,</span> <span class="n">h</span><span class="o">);</span> <span class="c1">// &lt;- super calls on the constructor for shapes and pass w, h into it</span>
+            <span class="kd">super</span><span class="o">(</span><span class="n">w</span><span class="o">,</span> <span class="n">h</span><span class="o">);</span> <span class="c1">// &lt;- super calls on the constructor for Shapes and pass w, h into it</span>
             <span class="n">style</span> <span class="o">=</span> <span class="n">s</span><span class="o">;</span>
         <span class="o">}</span>
 
@@ -1025,19 +1025,19 @@ only 1 subclass and 1 superclass</p>
 48
 49
 50
-51</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// superclass shapes</span>
-    <span class="kd">class</span> <span class="nc">shapes</span> <span class="o">{</span>
+51</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="c1">// superclass Shapes</span>
+    <span class="kd">class</span> <span class="nc">Shapes</span> <span class="o">{</span>
         <span class="kd">private</span> <span class="kt">double</span> <span class="n">width</span><span class="o">;</span>
         <span class="kd">private</span> <span class="kt">double</span> <span class="n">height</span><span class="o">;</span>
 
         <span class="c1">// overloading constructors:</span>
         <span class="c1">// default constructor</span>
-        <span class="n">shapes</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Shapes</span><span class="o">()</span> <span class="o">{</span>
             <span class="n">width</span> <span class="o">=</span> <span class="n">height</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
         <span class="o">}</span>
 
-        <span class="c1">// Parameterized constructor for shapes</span>
-        <span class="n">shapes</span><span class="o">(</span><span class="kt">double</span> <span class="n">w</span><span class="o">,</span> <span class="kt">double</span> <span class="n">h</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// Parameterized constructor for Shapes</span>
+        <span class="n">Shapes</span><span class="o">(</span><span class="kt">double</span> <span class="n">w</span><span class="o">,</span> <span class="kt">double</span> <span class="n">h</span><span class="o">)</span> <span class="o">{</span>
             <span class="n">width</span> <span class="o">=</span> <span class="n">w</span><span class="o">;</span>
             <span class="n">height</span> <span class="o">=</span> <span class="n">h</span><span class="o">;</span>
         <span class="o">}</span>
@@ -1047,19 +1047,19 @@ only 1 subclass and 1 superclass</p>
         <span class="kt">double</span> <span class="nf">getHeight</span><span class="o">()</span> <span class="o">{</span> <span class="k">return</span> <span class="n">height</span><span class="o">;</span> <span class="o">}</span>
     <span class="o">}</span>
 
-    <span class="c1">// subclass triangle inherits from shapes</span>
-    <span class="kd">class</span> <span class="nc">Triangle</span> <span class="kd">extends</span> <span class="n">shapes</span> <span class="o">{</span>
+    <span class="c1">// subclass triangle inherits from Shapes</span>
+    <span class="kd">class</span> <span class="nc">Triangle</span> <span class="kd">extends</span> <span class="n">Shapes</span> <span class="o">{</span>
         <span class="kd">private</span> <span class="n">String</span> <span class="n">style</span><span class="o">;</span>
 
         <span class="c1">// default constructor</span>
         <span class="n">Triangle</span><span class="o">()</span> <span class="o">{</span>
-            <span class="kd">super</span><span class="o">();</span> <span class="c1">// calls the default constructor for shapes</span>
+            <span class="kd">super</span><span class="o">();</span> <span class="c1">// calls the default constructor for Shapes</span>
             <span class="n">style</span> <span class="o">=</span> <span class="s">&quot;none&quot;</span><span class="o">;</span>
         <span class="o">}</span>
 
         <span class="c1">// constructor for Triangle</span>
         <span class="n">Triangle</span><span class="o">(</span><span class="n">String</span> <span class="n">s</span><span class="o">,</span> <span class="kt">double</span> <span class="n">w</span><span class="o">,</span> <span class="kt">double</span> <span class="n">h</span><span class="o">){</span>
-            <span class="kd">super</span><span class="o">(</span><span class="n">w</span><span class="o">,</span> <span class="n">h</span><span class="o">);</span> <span class="c1">// &lt;- super calls on the constructor for shapes and pass w, h into it</span>
+            <span class="kd">super</span><span class="o">(</span><span class="n">w</span><span class="o">,</span> <span class="n">h</span><span class="o">);</span> <span class="c1">// &lt;- super calls on the constructor for Shapes and pass w, h into it</span>
             <span class="n">style</span> <span class="o">=</span> <span class="n">s</span><span class="o">;</span>
         <span class="o">}</span>
 
