@@ -324,6 +324,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../pyBasics/" title="Basics" class="md-nav__link">
+      Basics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../pyLambda/" title="Lambdas" class="md-nav__link">
       Lambdas
     </a>
@@ -480,8 +492,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hashmap" title="Hashmap" class="md-nav__link">
-    Hashmap
+  <a href="#hashmap" title="Hashmap:" class="md-nav__link">
+    Hashmap:
   </a>
   
 </li>
@@ -514,6 +526,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      FRC Related
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        FRC Related
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gradleSetup/" title="GradleIO Code" class="md-nav__link">
+      GradleIO Code
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -542,8 +590,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hashmap" title="Hashmap" class="md-nav__link">
-    Hashmap
+  <a href="#hashmap" title="Hashmap:" class="md-nav__link">
+    Hashmap:
   </a>
   
 </li>
@@ -567,12 +615,28 @@
                   <a href="https://github.com/20dzhong/20dzhong-mkdocs.git/edit/master/docs/javaHashing.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <p>Java Map API</p>
-<h1 id="hashing">Hashing<a class="headerlink" href="#hashing" title="Permanent link">&para;</a></h1>
-<p>not finished</p>
-<h2 id="hashsets">Hashsets:<a class="headerlink" href="#hashsets" title="Permanent link">&para;</a></h2>
+                <h1 id="hashing">Hashing<a class="headerlink" href="#hashing" title="Permanent link">&para;</a></h1>
+<p>Hashing is made to speed up sorting process, for example, if an array is unsorted, a search in the array might take a long time
+since it's searching through all the element in the array. With Hashing, each object is given an index for ease of access.</p>
+<p>More information on Hashing could be found online</p>
+<p>Hashtable and <strong>Hashsets</strong> are very common datatype that use hashing, but they are very different, here are some difference:</p>
+<ul>
+<li>
+<p><strong>Hashsets</strong> implements the sets interface while <strong>Hashmap</strong> implement the map interface</p>
+</li>
+<li>
+<p><strong>Hashsets</strong> cannot contain duplicates, while in <strong>Hashmap</strong>, a duplicate will simply replace one another</p>
+</li>
+<li>
+<p><strong>Hashmap</strong> has a key and a value, much like dictionaries in python </p>
+</li>
+<li>
+<p>More info could be found online</p>
+</li>
+</ul>
+<h2 id="hashsets"><strong>Hashsets</strong>:<a class="headerlink" href="#hashsets" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
-<p class="admonition-title">HashSet Examples</p>
+<p class="admonition-title">HashSet Functions</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -632,10 +696,11 @@
 </td></tr></table>
 
 </div>
-<h2 id="hashmap">Hashmap<a class="headerlink" href="#hashmap" title="Permanent link">&para;</a></h2>
+<p>Hashset does not allow duplicate values, if you try to add a repeated value, it will return false.</p>
+<h2 id="hashmap">Hashmap:<a class="headerlink" href="#hashmap" title="Permanent link">&para;</a></h2>
 <p>Hashmap implements Map interface </p>
 <div class="admonition note">
-<p class="admonition-title">Hashmap</p>
+<p class="admonition-title">Hashmap Functions</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
