@@ -40,7 +40,7 @@
     
     
       
-        <title>Lambdas - Records</title>
+        <title>Functional Programming in Python - Records</title>
       
     
     
@@ -102,7 +102,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#python-lambda" tabindex="1" class="md-skip">
+      <a href="../#functional-programming-in-python" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -128,7 +128,7 @@
                 Records
               </span>
               <span class="md-header-nav__topic">
-                Lambdas
+                Functional Programming in Python
               </span>
             
           
@@ -346,9 +346,79 @@
       
     
     
-    <a href="./" title="Lambdas" class="md-nav__link md-nav__link--active">
-      Lambdas
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Functional Programming in Python
+      </label>
+    
+    <a href="./" title="Functional Programming in Python" class="md-nav__link md-nav__link--active">
+      Functional Programming in Python
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lambdas" title="Lambdas:" class="md-nav__link">
+    Lambdas:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-why-lambdas" title="So why Lambdas?" class="md-nav__link">
+    So why Lambdas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-applications" title="Other Applications" class="md-nav__link">
+    Other Applications
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maps" title="Maps:" class="md-nav__link">
+    Maps:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters" title="Filters:" class="md-nav__link">
+    Filters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" title="Sort:" class="md-nav__link">
+    Sort:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -543,6 +613,63 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lambdas" title="Lambdas:" class="md-nav__link">
+    Lambdas:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-why-lambdas" title="So why Lambdas?" class="md-nav__link">
+    So why Lambdas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-applications" title="Other Applications" class="md-nav__link">
+    Other Applications
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maps" title="Maps:" class="md-nav__link">
+    Maps:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filters" title="Filters:" class="md-nav__link">
+    Filters:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort" title="Sort:" class="md-nav__link">
+    Sort:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -556,10 +683,206 @@
                   <a href="https://github.com/20dzhong/20dzhong-mkdocs.git/edit/master/docs/pyLambda.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="python-lambda">Python Lambda<a class="headerlink" href="#python-lambda" title="Permanent link">&para;</a></h1>
-<p>Lambda operators are used for small, quick, one-time anonymous function. Lambda in Python is different than Lambda in Java.</p>
+                <h1 id="functional-programming-in-python">Functional Programming in Python<a class="headerlink" href="#functional-programming-in-python" title="Permanent link">&para;</a></h1>
+<h2 id="lambdas">Lambdas:<a class="headerlink" href="#lambdas" title="Permanent link">&para;</a></h2>
+<p>Lambda operators are used for small, quick, one-time anonymous function. The goal is to have a simple behavior passed into an object. Lambda in Python is different than Lambda in Java.</p>
+<p>Python are used a lot in filtering, sorting and operation on arrays. </p>
 <p>Normal functions are created with the <strong>def</strong> keyword, anonymous functions are created with the <strong>lambda</strong> keyword.</p>
 <p>Lambda Basic Syntax: <code class="codehilite">lambda arguments : expression</code></p>
+<p>A Lambda can take any number of arguments but it can only have one expression, it can only be one line.</p>
+<div class="admonition note">
+<p class="admonition-title">Sorting even numbers with Lambda</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="c1"># an array of integers</span>
+
+<span class="c1"># passing the behavior to an object</span>
+<span class="c1"># lambda gets argument arg, if arg has a remainder of 2, it will stay</span>
+<span class="n">x</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">arg</span><span class="p">:</span> <span class="n">arg</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="c1"># sort the array with the behavior</span>
+<span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">nums</span><span class="p">))</span> <span class="c1"># filter expects a function and a list</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="c1"># [2, 4, 6, 8, 10]</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>The short code above use <em>filter()</em> to filter through the list and take the even numbers using lambda</p>
+<div class="admonition note">
+<p class="admonition-title">Operations with Multiple Arguments</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">addition</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<span class="k">print</span><span class="p">(</span><span class="n">addition</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>The code above demonstrate a simple calculation with the use of lambda with multiple arguments</p>
+<div class="admonition note">
+<p class="admonition-title">Chaining Lambdas</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">9</span>
+
+<span class="n">quadratic</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="k">lambda</span> <span class="n">b</span><span class="p">:</span> <span class="n">b</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">quadratic</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>The code above demonstrate chaining lambda together, I don't see why anyone would do this, but just know this is a thing you can do</p>
+<p>The code above demonstrate the use of multiple lambdas together</p>
+<h2 id="so-why-lambdas">So why Lambdas?<a class="headerlink" href="#so-why-lambdas" title="Permanent link">&para;</a></h2>
+<p>The power of lambda is better shown when using it as an anonymous function inside of another function, below is an example of how it is useful</p>
+<div class="admonition note">
+<p class="admonition-title">Lambda Example, to the powerOf()</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#powerOf requires a int to know the operation it will eventually perform</span>
+<span class="k">def</span> <span class="nf">powerOf</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> 
+    <span class="k">return</span> <span class="k">lambda</span> <span class="n">a</span><span class="p">:</span> <span class="n">a</span> <span class="o">**</span> <span class="n">n</span>
+
+<span class="n">cube</span> <span class="o">=</span> <span class="n">powerOf</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">cube</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+
+<span class="n">square</span> <span class="o">=</span> <span class="n">powerOf</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">square</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>In the above, you can think of powerOf() as a skeleton method for the inner lambda function. <strong>a</strong> will multiply itself by <strong>n</strong> time, so <code class="codehilite">a^n</code>, a to the <code class="codehilite">n</code>th power
+It's assigning the function pointer to <strong>triple()</strong> while passing in the argument <strong>3</strong> as <strong>n</strong>, and the lambda is invoked
+when pass in an argument into <strong>triple()</strong></p>
+<p>This is very useful when you want different functions that are closely linked but have 1 or 2 different parameters.</p>
+<h2 id="other-applications">Other Applications<a class="headerlink" href="#other-applications" title="Permanent link">&para;</a></h2>
+<p>Lambda is used most in sorting, filtering, mapping, and operations on arrays, and here you will see why</p>
+<h3 id="maps">Maps:<a class="headerlink" href="#maps" title="Permanent link">&para;</a></h3>
+<p>Let's start with the <strong>Map()</strong> function, an extremely useful function that modifies elements in a list based on a behavior:</p>
+<div class="admonition note">
+<p class="admonition-title">function with map</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">double</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="c1"># the function returns whatever 2*x is</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+
+<span class="c1"># here, map will apply double to all elements in list1</span>
+<span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">double</span><span class="p">,</span> <span class="n">list1</span><span class="p">))</span>
+<span class="c1"># as seen above, you&#39;ll have to convert the mapped list to a list again</span>
+<span class="c1"># if you don&#39;t, res becomes a map object and you&#39;ll only print the memory address</span>
+
+<span class="c1"># output: [2, 4, 6, 8, 10, 12, 14]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>As seen above, <code class="codehilite">map(double, list1)</code> uses the <code class="codehilite">double</code> behavior to modify every element in <code class="codehilite">list1</code></p>
+<p>However, defining a function for this seems a little extra for such a simple process, this is where lambda comes in:</p>
+<div class="admonition note">
+<p class="admonition-title">lambda with map</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="p">,</span> <span class="n">list1</span><span class="p">))</span>
+
+<span class="c1"># output: [2, 4, 6, 8, 10, 12, 14]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>This strip of code above does the exact same thing as the one with the functions, but with much simpler and cleaner syntax.</p>
+<h3 id="filters">Filters:<a class="headerlink" href="#filters" title="Permanent link">&para;</a></h3>
+<p>Filter expect the same thing as map, a behavior and an iterable, the basic syntax is <code class="codehilite">filter(behavior, list)</code></p>
+<p>As the name suggest, <code class="codehilite">filter()</code> takes an existing list and create a new list based on whether the element passes the filter
+or not, <code class="codehilite">filter()</code> ony returns element when the behavior return <code class="codehilite">true</code></p>
+<div class="admonition note">
+<p class="admonition-title">lambda with filter</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span> <span class="c1"># create a list from -50 to 50</span>
+<span class="c1"># take all number that is divisible by 5 using lambda</span>
+<span class="n">res</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">list1</span><span class="p">))</span>
+
+<span class="c1"># output: [-30, -25, -20, -15, -10, -5, 0, 5, 10, 15, 20, 25]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>It's very useful for searching for objects inside a list or finding objects with specific qualities within a list as it's faster than a loop.</p>
+<h3 id="sort">Sort:<a class="headerlink" href="#sort" title="Permanent link">&para;</a></h3>
+<p>Before going into details, there are a couple of difference between <code class="codehilite">sorted</code> and <code class="codehilite">sort</code>:</p>
+<ul>
+<li><code class="codehilite">list1.sort()</code> will change the content of <code class="codehilite">list1</code> and permanently change it</li>
+<li><code class="codehilite">list2 = sorted(list1)</code> will return a new sorted list to <code class="codehilite">list2</code> but the content of <code class="codehilite">list1</code> is never altered</li>
+</ul>
+<p>Sort functions can be very useful when integrated with lambda, especially when there is a need to sort by a certain index,
+here's an example of using sort with lambda to sort the second element in a tuple:</p>
+<div class="admonition note">
+<p class="admonition-title">lambda with sort</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">list2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+
+<span class="c1"># zip basically takes multiple list and string</span>
+<span class="c1"># it strings them as tuple pairs/triplets depending on how many list you gave in</span>
+<span class="n">list3</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">))</span>
+<span class="c1"># list 3 = [(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)]</span>
+
+<span class="c1"># sorting by numerical order of the second number</span>
+<span class="n">res</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">list3</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+</div>
+<p>By gaining a good understanding of those topics, you'll never loose a single coding game</p>
                 
                   
                 
