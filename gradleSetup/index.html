@@ -533,8 +533,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-and-building-from-an-existing-project" title="Creating and Building from an existing Project" class="md-nav__link">
-    Creating and Building from an existing Project
+  <a href="#creating-and-building-from-an-existing-project-method-1" title="Creating and Building from an existing Project Method 1" class="md-nav__link">
+    Creating and Building from an existing Project Method 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-building-from-an-existing-project-method-2" title="Creating and Building from an existing Project Method 2" class="md-nav__link">
+    Creating and Building from an existing Project Method 2
   </a>
   
     <nav class="md-nav">
@@ -563,13 +570,6 @@
           <li class="md-nav__item">
   <a href="#1-downloading-the-frc-plugin-from-intellij" title="1. Downloading the FRC Plugin from IntelliJ:" class="md-nav__link">
     1. Downloading the FRC Plugin from IntelliJ:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-installing-quickstartzip" title="2. Installing Quickstart.zip" class="md-nav__link">
-    2. Installing Quickstart.zip
   </a>
   
 </li>
@@ -616,8 +616,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-and-building-from-an-existing-project" title="Creating and Building from an existing Project" class="md-nav__link">
-    Creating and Building from an existing Project
+  <a href="#creating-and-building-from-an-existing-project-method-1" title="Creating and Building from an existing Project Method 1" class="md-nav__link">
+    Creating and Building from an existing Project Method 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-building-from-an-existing-project-method-2" title="Creating and Building from an existing Project Method 2" class="md-nav__link">
+    Creating and Building from an existing Project Method 2
   </a>
   
     <nav class="md-nav">
@@ -650,13 +657,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#2-installing-quickstartzip" title="2. Installing Quickstart.zip" class="md-nav__link">
-    2. Installing Quickstart.zip
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -682,9 +682,20 @@
                 
                 
                 <h1 id="setting-up-the-gradleio-project">Setting up the GradleIO project<a class="headerlink" href="#setting-up-the-gradleio-project" title="Permanent link">&para;</a></h1>
-<h2 id="creating-and-building-from-an-existing-project">Creating and Building from an existing Project<a class="headerlink" href="#creating-and-building-from-an-existing-project" title="Permanent link">&para;</a></h2>
+<h2 id="creating-and-building-from-an-existing-project-method-1">Creating and Building from an existing Project Method 1<a class="headerlink" href="#creating-and-building-from-an-existing-project-method-1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Clone the project and put it in a desired directory</li>
+</ul>
+<h2 id="creating-and-building-from-an-existing-project-method-2">Creating and Building from an existing Project Method 2<a class="headerlink" href="#creating-and-building-from-an-existing-project-method-2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Clone the project and put it in a desired directory</li>
+<li>
+<p>When opening the project, a window should pop up to ask you to import gradle setup, set it up as the picture below, note that the important part is to <code class="codehilite">Use gradle &#39;wrapper&#39; task config</code>
+<img alt="setup template" src="../images/gradlew_setup.PNG" /></p>
+</li>
+<li>
+<p>If everything goes correctly and you imported all the right stuff, that should be all you need to do </p>
+</li>
 </ul>
 <h3 id="1-installing-quickstartzip">1. Installing Quickstart.zip<a class="headerlink" href="#1-installing-quickstartzip" title="Permanent link">&para;</a></h3>
 <ul>
@@ -728,6 +739,11 @@ replace the <code class="codehilite">TEAM</code> number and the <code class="cod
 <h2 id="creating-a-new-frc-project">Creating a new FRC Project<a class="headerlink" href="#creating-a-new-frc-project" title="Permanent link">&para;</a></h2>
 <h3 id="1-downloading-the-frc-plugin-from-intellij">1. Downloading the FRC Plugin from IntelliJ:<a class="headerlink" href="#1-downloading-the-frc-plugin-from-intellij" title="Permanent link">&para;</a></h3>
 <ul>
+<li>UPDATE INTELLIJ TO THE LATEST VERSION, it might not work otherwise</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">You can skip the following if it's not you have already downloaded the plugin</p>
+<ul>
 <li>Open IntelliJ and go to <code class="codehilite">File -&gt; Setting -&gt; Plugins</code>   </li>
 <li>Under the <strong>Plugins</strong> panel, click the <code class="codehilite">Browse Repository</code> 
 button and search up <code class="codehilite">FRC</code> in the search bar, and download the only option that shows up</li>
@@ -735,44 +751,17 @@ button and search up <code class="codehilite">FRC</code> in the search bar, and 
 <li>Go to <code class="codehilite">File -&gt; Settings -&gt; Language &amp; Frameworks -&gt; Schemas and DTDs -&gt; FRC</code> and set the team name to <strong>852</strong></li>
 </ul>
 <p><img alt="Configur Team Number" src="../images/frc-settings-dialog-team-number-highlighted.png" /></p>
-<h3 id="2-installing-quickstartzip">2. Installing Quickstart.zip<a class="headerlink" href="#2-installing-quickstartzip" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Go to <a href="https://github.com/wpilibsuite/GradleRIO/blob/master/Quickstart.zip">https://github.com/wpilibsuite/GradleRIO/blob/master/Quickstart.zip</a> and install <strong>Quickstart.zip</strong>.</li>
-<li>Unzip the file and put it in a folder.</li>
-</ul>
-<div class="admonition warning">
-<p class="admonition-title">Extracting Files</p>
-<p>Do the following very carefully, if you don't the project will go wrong. </p>
 </div>
 <ul>
-<li>There will be 2 folders in Quickstart.zip, <code class="codehilite">java</code> and <code class="codehilite">cpp</code>, go in side the java folder and copy <code class="codehilite">gradle</code>, <code class="codehilite">build.gradle</code>, <code class="codehilite">gradlew</code>, and <code class="codehilite">gradlew.bat</code>, paste those files
-inside the root of your working directory.</li>
-</ul>
-<p><img alt="Example" src="../images/project_view.png" /> </p>
-<ul>
+<li>Create the new FRC Project, <code class="codehilite">File -&gt; New -&gt; Project</code>
+<img alt="FRC Project" src="../images/frc_project.PNG" /></li>
 <li>
-<p>After pasting them in your working directory go to edit <code class="codehilite">build.gradle</code>, you will see those lines of code: 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>def TEAM = 852
-def ROBOT_CLASS = &quot;frc.team852.robot.Robot&quot;
-</pre></div>
-</td></tr></table>
-replace the <code class="codehilite">TEAM</code> number and the <code class="codehilite">team0000</code> number with <strong>852</strong> like I've done above.</p>
+<p>When the windows pop up, choose <code class="codehilite">FRC Project</code> and <code class="codehilite">FRC Command Based Robot</code>
+<img alt="FRC Project" src="../images/command_base_create.PNG" /></p>
 </li>
 <li>
-<p>To build the Gradle Project, you need to open your terminal, it should be located on the bottom of IntelliJ (you can also use independent terminal if you know how to)
-<img alt="Terminal" src="../images/terminal.PNG" /></p>
+<p>And you're done! </p>
 </li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Window and Mac Setup Differs</p>
-<ul>
-<li>For <strong>Windows</strong>, simply type <code class="codehilite">gradlew build</code> in the terminal and you are done</li>
-<li>For <strong>Mac</strong>, type <code class="codehilite">chmod u+x gradlew</code> into terminal to grant it the permissions to execute, then type in <code class="codehilite">./gradlew</code>, then you are done.</li>
-</ul>
-</div>
-<ul>
-<li>Congrats, you are done, if <code class="codehilite">src</code> folder is not marked as source, mark it as source.</li>
 </ul>
                 
                   
