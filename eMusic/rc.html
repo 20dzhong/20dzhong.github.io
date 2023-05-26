@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<!-- header -->
+	<!doctype html>
+
+<html lang="en">
+
+    <head>
+		<title>Music Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>   
+	<body class="is-preload" onload="start()">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+		<!-- Menu -->
+		<!-- Header -->
+<header id="header">
+    <h1><a href="../index.html">Donovan's Music Page</a></h1>
+    <nav class="links">
+        <ul>
+            <li><a href="../cMusic/hj.html">Chinese</a></li>
+            <li><a href="../eMusic/rc.html">English</a></li>
+            <li><a href="#">Jazz</a></li>
+        </ul>
+    </nav>
+
+    <nav class="main">
+        <ul>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Menu -->
+<section id="menu">
+
+    <!-- Search -->
+    <section>
+        <form class="search" method="get">
+            <input type="text" name="query" placeholder="Search" onkeyup="searchSong()" id="searchBar" />
+        </form>
+    </section>
+
+    <!-- Links -->
+    <section>
+        <ul class="links">
+            <li>
+                <a href="../cMusic/hj.html">
+                    <h3>Chinese Songs</h3>
+                    <p>List of songs in Chinese</p>
+                </a>
+            </li>
+            <li>
+                <a href="../eMusic/rc.html">
+                    <h3>English Songs</h3>
+                    <p>List of songs in English</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h3>Jazz Songs</h3>
+                    <p>List of Jazz songs</p>
+                </a>
+            </li>
+        </ul>
+        <br>
+        <section id="pListMenu"> 
+
+        </section>
+
+    </section>
+</section>
+		
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Post -->
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2>Rainbow Connection - Kermit</h2>
+							<p>Chord and Lyrics</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2023-4-26">April 4, 2023</time>
+							<a href="#" class="author"><span class="name">Donovan Zhong</span><img src="../images/profile.jpg" alt="" /></a>
+						</div>
+					</header>
+					
+					<a href="#" class="image featured"><img src="../images/guitar-back.jpg" alt="" /></a>
+					
+					<button onclick = "changeFont(-1)" style = ""> -1 Font </button>
+					<button onclick = "changeFont(1)" style = ""> +1 Font </button>
+					<button onclick = "transposeChord(-1)" style = ""> -1 Chord </button>
+					<button onclick = "transposeChord(1)" style = ""> +1 Chord </button>
+
+					<div id="song" hidden="hidden">[Verse]
+G             Emin    C         D
+why are there so many songs about rainbows,
+G                 Emin  C
+and what's on the other side?
+G            Emin   C         D
+rainbows are visions, but only illusions.
+G                   Emin C
+rainbows have nothing to hide.
+Cmaj7
+so we've been told and some choose to believe it.
+Bmin7
+i know they're wrong, wait and see.
+Amin7          D            Bmin       E
+someday we'll find it, the rainbow connection.
+C               D             G
+the lovers, the dreamers, and me.
+
+G             Emin           C         D
+who said that every wish would be heard and answered
+G                   Emin C
+and wished on a morning star?
+G             Emin            C         D
+somebody thought of that and someone believed him.
+G               Emin C
+look what it's done so far.
+Cmaj7
+what's so amazing and keeps us stargazing?
+Bmin7
+what do we think we might see?
+Amin7         D            Bmin       E
+someday we'll find it, the rainbow connection.
+C               D             G
+the lovers, the dreamers and me.
+ 
+G             Emin            C         D
+have you been half asleep and have you heard voices?
+G               Emin C
+i've heard the-calling my name.
+G             Emin              C             D
+are these the sweet sounds that called the young sailors?
+G               Emin C
+i think they're one and the same.
+Cmaj7
+i've heard it too many times to ignore it.
+Bmin7
+it's something that I'm supposed to be.
+Amin7         D            Bmin    E
+someday we'll find it, the rainbow connection.
+C               D            G
+the lovers, the dreamers and me.
+
+</div>
+					
+					<pre>
+						<div id="formatted-song" class="songTxt"></div>
+					</pre>
+					
+					<footer>
+						<ul class="actions">
+							<button onclick = "hideSidebar()" class="button large"> Expand </button>
+							<button onclick = "showSidebar()" class="button large"> Condense </button>
+						</ul>
+						<ul class="stats">
+							<li><a href="#">English</a></li>
+						</ul>
+					</footer>
+				</article>
+
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<section id="sidebar">
+
+    <!-- Intro -->
+    <section id="intro">
+        <header>
+            <h2>Song Chords & Tabs</h2>
+            <p>Songs that I knows how to play</p>
+        </header>
+    </section>
+
+    <!-- Posts List -->
+    <section id="pListSide">
+        <ul class="posts">
+            <li>
+                <article>
+                    <header>
+                        <h3><a href="./rc.html">Rainbow Connection - Kermit</a></h3>
+                        <time class="published" datetime="2023-4-27">April 27, 2023</time>
+                    </header>
+                    <a href="./rc.html" class="image"><img src="../images/kermit.jpg" alt="" /></a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <!-- About -->
+    <section class="blurb">
+        <h2>About</h2>
+        <p>I used to use a chinese site for finding chords and tabs as well as Tabs. However, the site shutdown in 2021 and I lost all my saved songs. Tabs works fine but it requires a monthly subscription to access more functions. So I just decided to do it myself.</p>
+    </section>
+</section>			</div>
+			
+		</div>
+		
+		<!-- Scripts -->
+		    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function hideSidebar() {
+            var link = document.getElementById('sidebar');
+            link.style.display = 'none'; //or
+        }
+
+        function showSidebar() {
+            var link = document.getElementById('sidebar');
+            link.style.display = 'inline'; //or
+        }
+
+        function transposeChord(amount) {
+            var scale = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
+            var lines = document.getElementById("formatted-song").children;
+
+            for (var i = 0; i < lines.length; i++) {
+                var curr = lines[i].innerHTML;
+                lines[i].innerHTML = curr.replace(/[CDEFGAB]b?/g,
+                function(match) {
+                    var i = (scale.indexOf(match) + amount) % scale.length;
+                    return scale[ i < 0 ? i + scale.length : i ];});
+            }
+        }
+
+        function changeFont(increaseFactor) {
+            var children = document.getElementById("formatted-song").children;
+
+            for (var i = 0; i < children.length; i++) {
+                var child = children[i];
+                var fontSize = window.getComputedStyle(child).getPropertyValue("font-size");
+                child.style.fontSize = parseInt(fontSize) + increaseFactor + "px";
+            }
+        }
+        
+        function highlightChord() {
+            var preformattedText = document.getElementById("song").innerHTML;
+            var formatted = document.getElementById("formatted-song");
+
+            // Split the text into lines
+            var lines = preformattedText.split(/\r?\n/);
+
+            // Loop through each line of the text
+            for (let i = 0; i < lines.length; i += 2) {
+                // Create a new div element to hold the song
+                var songDiv = document.createElement("div");
+                songDiv.classList.add("song-line");
+
+                var line1 = lines[i];
+                var line2 = lines[i+1];
+
+                // Check if the line contains chords
+                if (line1.trim().match(/^[A-G][#b]?(m|maj|min|sus)?(\d)?(\s|$)/i)) {
+                    // Create a new div element to hold the chord line and append it to the song div
+                    var chordDiv = document.createElement("div");
+                    chordDiv.classList.add("chord-line");
+                    chordDiv.innerHTML = line1;
+                    songDiv.appendChild(chordDiv);
+                    
+                    // Create a new div element to hold the song lyric and append it to the song div
+                    var lyricDiv = document.createElement("div");
+                    lyricDiv.classList.add("lyric-line");
+                    lyricDiv.innerHTML = line2;
+                    songDiv.appendChild(lyricDiv);
+
+                    formatted.appendChild(songDiv);
+                } else {
+                    i -= 1;
+                    var divider = document.createElement("div");
+                    if (line1.trim() == "") {
+                        divider.innerHTML = "\n";
+                    } else {
+                        divider.innerHTML = line1;
+                    }
+                    
+                    formatted.appendChild(divider);
+
+                }
+            }
+
+            var child = document.getElementById("formatted-song").children;
+            for (var i = 0; i < child.length; i++) {
+                var curr = child[i].innerHTML;
+                child[i].innerHTML = curr.replace(/\b[A-G](#|b)?(maj|min|dim|aug|sus)?(6|7|9|11|13)?\b/g,
+                function(match) {
+                    return "<span class='tabs'>" + match + "</span>";});
+            }
+        }
+
+        function populateMenu() {
+            var list = document.getElementById("pListSide").innerHTML;
+            document.getElementById("pListMenu").innerHTML = list;
+        }
+
+        function start() {
+            highlightChord();
+            populateMenu();
+        }
+
+        function searchSong() {
+            let input = document.getElementById('searchBar').value
+            input=input.toLowerCase();
+            let x = document.getElementById('pListMenu').getElementsByClassName('songLst');
+            
+            for (i = 0; i < x.length; i++) { 
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display="none";
+                }
+                else {
+                    x[i].style.display="list-item";                 
+                }
+            }
+        }
+
+
+    </script>
+	</body>
+</html>
